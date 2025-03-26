@@ -13,3 +13,8 @@
 body::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Edge */
 }
+
+.page {
+  margin-top: 4.5rem;
+  padding: 1.5rem 3rem;
+}

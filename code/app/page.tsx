@@ -26,7 +26,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 flex justify-center items-center">
             <span
-              className="text-[220px] text-white tracking-[.15em] bg-black/10 px-96 py-48"
+              className="text-[220px] text-white tracking-[.15em] bg-black/20 px-96 py-48"
               style={{ fontFamily: "teko" }}
             >
               ISRO
