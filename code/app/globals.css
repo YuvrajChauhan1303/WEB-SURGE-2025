@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: "fsp";
-    src: url("/fonts/fsp_light.otf");
+  font-family: "fsp";
+  src: url("/fonts/fsp_light_3.otf");
+}
+
+@font-face {
+  font-family: "teko";
+  src: url("/fonts/Teko-Light.ttf");
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
 }
