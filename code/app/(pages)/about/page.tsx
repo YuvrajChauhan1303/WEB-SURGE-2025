@@ -58,7 +58,7 @@ function Page() {
             {/* Chandrayaan-3 Card */}
             <div className="bg-gray-100 p-6 rounded-lg shadow-md">
               <Image
-                src="/images/chandrayaan3.jpg"
+                src="/images/chandrayaan.png"
                 alt="Chandrayaan-3 Mission"
                 width={500}
                 height={300}
@@ -77,7 +77,7 @@ function Page() {
             {/* Mangalyaan Card */}
             <div className="bg-gray-100 p-6 rounded-lg shadow-md">
               <Image
-                src="/images/mangalyaan.jpg"
+                src="/images/mangalyaan.png"
                 alt="Mangalyaan Mission"
                 width={500}
                 height={300}
