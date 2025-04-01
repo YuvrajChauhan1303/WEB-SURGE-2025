@@ -93,7 +93,7 @@ function Page() {
           </h1>
           <p className="text-lg mt-4 leading-relaxed">
             ISRO is working on ambitious projects like{" "}
-            <span className="font-semibold">Gaganyaan</span> (India's first
+            <span className="font-semibold">Gaganyaan</span> (India&apos;s first
             crewed spaceflight), interplanetary missions, and advanced satellite
             technologies for global connectivity.
           </p>
