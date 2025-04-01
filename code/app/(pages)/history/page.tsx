@@ -66,7 +66,7 @@ function Page() {
     },
     {
       title: "2023 - Chandrayaan-3",
-      imgSrc: "/images/jpg",
+      imgSrc: "/images/2023.jpg",
       content: (
         <p className="text-neutral-800 text-xl font-normal">
           India successfully landed a rover on the lunar surface, making it the
