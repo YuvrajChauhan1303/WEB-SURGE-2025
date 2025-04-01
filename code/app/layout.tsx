@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { usePathname } from "next/navigation";
+import Head from "next/head"; // Import Head component
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Navbar2 from "@/components/Navbar2";
@@ -33,6 +34,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Head>
+          <title>{String(metadata.title)}</title> {/* Explicitly cast title */}
+          <meta
+            name="description"
+            content={String(metadata.description)}
+          />{" "}
+          {/* Explicitly cast description */}
+        </Head>
         <div className="flex-col flex overflow-x-hidden">
           {pathname === "/" ? <Navbar /> : <Navbar2 />}
           {children}
