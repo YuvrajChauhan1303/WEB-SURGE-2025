@@ -1,155 +1,89 @@
+"use client";
 import React from "react";
-import Image from "next/image";
 
-function Page() {
+export const CurrentLeads = () => {
+  const currentLeads = [
+    {
+      name: "Dr. S. Somanath",
+      position: "Chairman, ISRO",
+      imgSrc: "/images/s_somnath.png",
+      description: (
+        <p className="text-neutral-800 text-xl font-normal">
+          As the current chairman of ISRO, Dr. Somanath is leading India's space
+          programs, including Chandrayaan-3, Gaganyaan, and deep-space missions.
+        </p>
+      ),
+    },
+    {
+      name: "Dr. Unnikrishnan Nair",
+      position: "Director, Vikram Sarabhai Space Centre (VSSC)",
+      imgSrc: "/images/UNN.png",
+      description: (
+        <p className="text-neutral-800 text-xl font-normal">
+          Heading VSSC, he is responsible for launch vehicle developments and
+          key space exploration projects.
+        </p>
+      ),
+    },
+    {
+      name: "Dr. Nilesh Desai",
+      position: "Director, Space Applications Centre (SAC)",
+      imgSrc: "/images/nilesh-desai.png",
+      description: (
+        <p className="text-neutral-800 text-xl font-normal">
+          Leading research in satellite communications, remote sensing, and
+          space applications for national development.
+        </p>
+      ),
+    },
+    {
+      name: "Dr. P. Kunhikrishnan",
+      position: "Director, UR Rao Satellite Centre (URSC)",
+      imgSrc: "/images/PNN.png",
+      description: (
+        <p className="text-neutral-800 text-xl font-normal">
+          Supervising satellite development, ensuring advancements in space
+          technology for India's missions.
+        </p>
+      ),
+    },
+  ];
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900">
-      {/* Title Section */}
-      <div
-        className="text-center py-16 bg-gray-200 shadow-md"
-        style={{ fontFamily: "teko" }}
-      >
-        <h1 className="text-5xl font-bold tracking-wide">
-          Department of Space
-        </h1>
-        <h2 className="text-6xl font-semibold">
-          Indian Space Research Organization
+    <div className="w-full bg-white font-sans md:px-10 py-10">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-6xl font-bold text-center text-neutral-700 mb-10">
+          ISRO Current Leadership
         </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+          {currentLeads.map((leader, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg p-6 border border-gray-300"
+            >
+              {/* Image */}
+              <div className="w-full h-64 overflow-hidden rounded-lg">
+                <img
+                  src={leader.imgSrc}
+                  alt={leader.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Name & Position */}
+              <h3 className="text-2xl font-bold text-neutral-700 mt-4">
+                {leader.name}
+              </h3>
+              <h4 className="text-lg text-gray-500">{leader.position}</h4>
+
+              {/* Description */}
+              <div className="mt-2">{leader.description}</div>
+            </div>
+          ))}
+        </div>
       </div>
-
-      {/* About ISRO Section */}
-      <section className="py-16 px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-semibold border-l-4 border-blue-500 pl-4">
-            About ISRO
-          </h1>
-          <p className="text-lg mt-4 leading-relaxed">
-            The Indian Space Research Organization (ISRO) is India’s national
-            space agency, established in 1969. Over the decades, ISRO has
-            significantly advanced satellite development, planetary research,
-            and space-based applications, making India a leading player in the
-            global space industry.
-          </p>
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section className="py-16 px-8 bg-gray-200">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-semibold border-l-4 border-red-500 pl-4">
-            Our Mission
-          </h1>
-          <p className="text-lg mt-4 leading-relaxed">
-            ISRO is dedicated to harnessing space technology for the benefit of
-            society. Its mission includes expanding scientific research,
-            ensuring technological advancements, and strengthening India’s
-            capabilities in space exploration.
-          </p>
-        </div>
-      </section>
-
-      {/* Achievements Section (Cards with Images and Descriptions) */}
-      <section className="py-16 px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-semibold border-l-4 border-green-500 pl-4">
-            Notable Achievements
-          </h1>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Chandrayaan-3 Card */}
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <Image
-                src="/images/chandrayaan.png"
-                alt="Chandrayaan-3 Mission"
-                width={500}
-                height={300}
-                className="rounded-t-lg"
-              />
-              <h2 className="text-2xl font-semibold mt-4">Chandrayaan-3</h2>
-              <p className="text-lg mt-2 leading-relaxed">
-                Launched in July 2023, Chandrayaan-3 achieved a successful soft
-                landing near the Moon&apos;s south pole on August 23, 2023. This
-                mission demonstrated India&apos;s capability in lunar
-                exploration and included a lander and rover to conduct
-                scientific experiments on the lunar surface.
-              </p>
-            </div>
-
-            {/* Mangalyaan Card */}
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <Image
-                src="/images/mangalyaan.png"
-                alt="Mangalyaan Mission"
-                width={500}
-                height={300}
-                className="rounded-t-lg"
-              />
-              <h2 className="text-2xl font-semibold mt-4">Mangalyaan</h2>
-              <p className="text-lg mt-2 leading-relaxed">
-                Also known as the Mars Orbiter Mission (MOM), Mangalyaan was
-                launched on November 5, 2013, and successfully entered Mars
-                orbit on September 23, 2014. This mission made India the first
-                Asian nation to reach Mars orbit and the first globally to do so
-                on its maiden attempt.
-              </p>
-            </div>
-
-            {/* PSLV-C37 Card */}
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <Image
-                src="/images/pslv-c37.jpg"
-                alt="PSLV-C37 Mission"
-                width={500}
-                height={300}
-                className="rounded-t-lg"
-              />
-              <h2 className="text-2xl font-semibold mt-4">PSLV-C37</h2>
-              <p className="text-lg mt-2 leading-relaxed">
-                On February 15, 2017, ISRO&apos;s Polar Satellite Launch Vehicle
-                (PSLV-C37) set a world record by successfully launching 104
-                satellites in a single mission. This remarkable achievement
-                showcased ISRO&apos;s prowess in satellite deployment and space
-                mission management.
-              </p>
-            </div>
-
-            {/* NavIC Card */}
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <Image
-                src="/images/navic.jpg"
-                alt="NavIC System"
-                width={500}
-                height={300}
-                className="rounded-t-lg"
-              />
-              <h2 className="text-2xl font-semibold mt-4">NavIC</h2>
-              <p className="text-lg mt-2 leading-relaxed">
-                The Navigation with Indian Constellation (NavIC) is India&apos;s
-                autonomous satellite navigation system, providing accurate
-                position information services to users in India and the
-                surrounding region. It enhances India&apos;s capability in
-                navigation and positioning applications.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Future Goals Section */}
-      <section className="py-16 px-8 bg-gray-200">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-semibold border-l-4 border-purple-500 pl-4">
-            Future Goals
-          </h1>
-          <p className="text-lg mt-4 leading-relaxed">
-            ISRO is working on ambitious projects like{" "}
-            <span className="font-semibold">Gaganyaan</span> (India&apos;s first
-            crewed spaceflight), interplanetary missions, and advanced satellite
-            technologies for global connectivity.
-          </p>
-        </div>
-      </section>
     </div>
   );
-}
+};
 
-export default Page;
+export default CurrentLeads;
