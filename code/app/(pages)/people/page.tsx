@@ -58,7 +58,7 @@ function Page() {
             {/* Chandrayaan-3 Card */}
             <div className="bg-gray-100 p-6 rounded-lg shadow-md">
               <Image
-                src="/images/chandrayaan3.jpg"
+                src="/images/chandrayaan.png"
                 alt="Chandrayaan-3 Mission"
                 width={500}
                 height={300}
@@ -67,17 +67,17 @@ function Page() {
               <h2 className="text-2xl font-semibold mt-4">Chandrayaan-3</h2>
               <p className="text-lg mt-2 leading-relaxed">
                 Launched in July 2023, Chandrayaan-3 achieved a successful soft
-                landing near the Moon's south pole on August 23, 2023. This
-                mission demonstrated India's capability in lunar exploration and
-                included a lander and rover to conduct scientific experiments on
-                the lunar surface.
+                landing near the Moon&apos;s south pole on August 23, 2023. This
+                mission demonstrated India&apos;s capability in lunar
+                exploration and included a lander and rover to conduct
+                scientific experiments on the lunar surface.
               </p>
             </div>
 
             {/* Mangalyaan Card */}
             <div className="bg-gray-100 p-6 rounded-lg shadow-md">
               <Image
-                src="/images/mangalyaan.jpg"
+                src="/images/mangalyaan.png"
                 alt="Mangalyaan Mission"
                 width={500}
                 height={300}
@@ -104,10 +104,10 @@ function Page() {
               />
               <h2 className="text-2xl font-semibold mt-4">PSLV-C37</h2>
               <p className="text-lg mt-2 leading-relaxed">
-                On February 15, 2017, ISRO's Polar Satellite Launch Vehicle
+                On February 15, 2017, ISRO&apos;s Polar Satellite Launch Vehicle
                 (PSLV-C37) set a world record by successfully launching 104
                 satellites in a single mission. This remarkable achievement
-                showcased ISRO's prowess in satellite deployment and space
+                showcased ISRO&apos;s prowess in satellite deployment and space
                 mission management.
               </p>
             </div>
@@ -123,11 +123,11 @@ function Page() {
               />
               <h2 className="text-2xl font-semibold mt-4">NavIC</h2>
               <p className="text-lg mt-2 leading-relaxed">
-                The Navigation with Indian Constellation (NavIC) is India's
+                The Navigation with Indian Constellation (NavIC) is India&apos;s
                 autonomous satellite navigation system, providing accurate
                 position information services to users in India and the
-                surrounding region. It enhances India's capability in navigation
-                and positioning applications.
+                surrounding region. It enhances India&apos;s capability in
+                navigation and positioning applications.
               </p>
             </div>
           </div>
@@ -142,7 +142,7 @@ function Page() {
           </h1>
           <p className="text-lg mt-4 leading-relaxed">
             ISRO is working on ambitious projects like{" "}
-            <span className="font-semibold">Gaganyaan</span> (India's first
+            <span className="font-semibold">Gaganyaan</span> (India&apos;s first
             crewed spaceflight), interplanetary missions, and advanced satellite
             technologies for global connectivity.
           </p>
