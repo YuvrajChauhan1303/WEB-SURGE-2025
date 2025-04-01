@@ -9,8 +9,9 @@ export const CurrentLeads = () => {
       imgSrc: "/images/s_somnath.png",
       description: (
         <p className="text-neutral-800 text-xl font-normal">
-          As the current chairman of ISRO, Dr. Somanath is leading India's space
-          programs, including Chandrayaan-3, Gaganyaan, and deep-space missions.
+          As the current chairman of ISRO, Dr. Somanath is leading India&apos;s
+          space programs, including Chandrayaan-3, Gaganyaan, and deep-space
+          missions.
         </p>
       ),
     },
@@ -43,7 +44,7 @@ export const CurrentLeads = () => {
       description: (
         <p className="text-neutral-800 text-xl font-normal">
           Supervising satellite development, ensuring advancements in space
-          technology for India's missions.
+          technology for India&apos;s missions.
         </p>
       ),
     },

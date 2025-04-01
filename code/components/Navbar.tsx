@@ -9,7 +9,7 @@ import FullNavbar from "./FullNavbar2";
 const Navbar = () => {
   const menuItems = [
     { link: "/about", title: "About" },
-    { link: "/missions", title: "Mission" },
+    { link: "/career", title: "Career" },
     { link: "/history", title: "History" },
   ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
