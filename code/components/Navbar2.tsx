@@ -16,7 +16,7 @@ const Navbar2 = () => {
   }, [pathname]);
 
   return (
-    <nav className="fixed flex items-center justify-between px-12 py-2 bg-black/10 text-white z-4 w-screen">
+    <nav className="fixed flex items-center justify-between px-12 py-2 text-white z-4 w-screen">
       <Link href={"/"} className="cursor-pointer">
         <Image src={"/images/ISRO.png"} width={60} height={80} alt="logo" />
       </Link>
