@@ -6,6 +6,7 @@ import Head from "next/head"; // Import Head component
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Navbar2 from "@/components/Navbar2";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,9 @@ export default function RootLayout({
         <div className="flex-col flex overflow-x-hidden">
           {pathname === "/" ? <Navbar /> : <Navbar2 />}
           {children}
+        </div>
+        <div className="relative bottom-0">
+          <Footer />
         </div>
       </body>
     </html>

@@ -1,17 +1,24 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CgMenuLeft } from "react-icons/cg";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
 import FullNavbar from "./FullNavbar2";
+
 const Navbar = () => {
   const menuItems = [
     { link: "/about", title: "About" },
     { link: "/missions", title: "Mission" },
     { link: "/history", title: "History" },
   ];
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Track menu state
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname(); // Get current route
+
+  // Close menu when the route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <nav className="flex items-center justify-between px-12 py-4 bg-black/20 text-white fixed z-20 w-screen">
