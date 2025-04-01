@@ -48,88 +48,39 @@ function Page() {
         </div>
       </section>
 
-      {/* Achievements Section (Cards with Images and Descriptions) */}
+      {/* Achievements Section */}
       <section className="py-16 px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-semibold border-l-4 border-green-500 pl-4">
             Notable Achievements
           </h1>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Chandrayaan-3 Card */}
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <Image
-                src="/images/chandrayaan.png"
-                alt="Chandrayaan-3 Mission"
-                width={500}
-                height={300}
-                className="rounded-t-lg"
-              />
-              <h2 className="text-2xl font-semibold mt-4">Chandrayaan-3</h2>
-              <p className="text-lg mt-2 leading-relaxed">
-                Launched in July 2023, Chandrayaan-3 achieved a successful soft
-                landing near the Moon&apos;s south pole on August 23, 2023. This
-                mission demonstrated India&apos;s capability in lunar
-                exploration and included a lander and rover to conduct
-                scientific experiments on the lunar surface.
-              </p>
-            </div>
-
-            {/* Mangalyaan Card */}
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <Image
-                src="/images/mangalyaan.png"
-                alt="Mangalyaan Mission"
-                width={500}
-                height={300}
-                className="rounded-t-lg"
-              />
-              <h2 className="text-2xl font-semibold mt-4">Mangalyaan</h2>
-              <p className="text-lg mt-2 leading-relaxed">
-                Also known as the Mars Orbiter Mission (MOM), Mangalyaan was
-                launched on November 5, 2013, and successfully entered Mars
-                orbit on September 23, 2014. This mission made India the first
-                Asian nation to reach Mars orbit and the first globally to do so
-                on its maiden attempt.
-              </p>
-            </div>
-
-            {/* PSLV-C37 Card */}
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <Image
-                src="/images/pslv-c37.jpg"
-                alt="PSLV-C37 Mission"
-                width={500}
-                height={300}
-                className="rounded-t-lg"
-              />
-              <h2 className="text-2xl font-semibold mt-4">PSLV-C37</h2>
-              <p className="text-lg mt-2 leading-relaxed">
-                On February 15, 2017, ISRO&apos;s Polar Satellite Launch Vehicle
-                (PSLV-C37) set a world record by successfully launching 104
-                satellites in a single mission. This remarkable achievement
-                showcased ISRO&apos;s prowess in satellite deployment and space
-                mission management.
-              </p>
-            </div>
-
-            {/* NavIC Card */}
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-              <Image
-                src="/images/navic.jpg"
-                alt="NavIC System"
-                width={500}
-                height={300}
-                className="rounded-t-lg"
-              />
-              <h2 className="text-2xl font-semibold mt-4">NavIC</h2>
-              <p className="text-lg mt-2 leading-relaxed">
-                The Navigation with Indian Constellation (NavIC) is India&apos;s
-                autonomous satellite navigation system, providing accurate
-                position information services to users in India and the
-                surrounding region. It enhances India&apos;s capability in
-                navigation and positioning applications.
-              </p>
-            </div>
+          <div className="flex flex-wrap gap-6 justify-center mt-6">
+            {/* Achievement Cards */}
+            {[
+              { src: "/images/chandrayaan.png", title: "Chandrayaan-3" },
+              { src: "/images/mangalyaan.png", title: "Mangalyaan" },
+              { src: "/images/gaganyaan.png", title: "Gaganyaan" },
+              { src: "/images/pslv.png", title: "PSLV Successes" },
+            ].map((achievement, index) => (
+              <div
+                key={index}
+                className="w-[400px] h-[400px] overflow-hidden rounded-[24px] bg-gray-200 relative group"
+              >
+                <Image
+                  src={achievement.src}
+                  alt={achievement.title}
+                  fill
+                  className="transition-transform duration-500 ease-in-out hover:scale-110 object-contain group-hover:blur-md"
+                  sizes="(max-width: 768px) 100vw, 600px"
+                />
+                <div
+                  className="absolute bottom-4 left-4 text-black text-3xl font-semibold opacity-0 translate-y-4 tracking-wide transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0"
+                  style={{ fontFamily: "teko" }}
+                >
+                  {achievement.title}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -142,7 +93,7 @@ function Page() {
           </h1>
           <p className="text-lg mt-4 leading-relaxed">
             ISRO is working on ambitious projects like{" "}
-            <span className="font-semibold">Gaganyaan</span> (India&apos;s first
+            <span className="font-semibold">Gaganyaan</span> (India's first
             crewed spaceflight), interplanetary missions, and advanced satellite
             technologies for global connectivity.
           </p>
