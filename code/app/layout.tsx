@@ -47,7 +47,9 @@ export default function RootLayout({
           {pathname === "/" ? <Navbar /> : <Navbar2 />}
           {children}
         </div>
-        <Footer />
+        <div className="relative bottom-0">
+          <Footer />
+        </div>
       </body>
     </html>
   );

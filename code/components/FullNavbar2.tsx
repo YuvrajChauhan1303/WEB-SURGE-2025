@@ -18,7 +18,7 @@ const links = [
 
 const FullNavbar: React.FC<FullNavbarProps> = ({ onClose }) => {
   return (
-    <div className="fixed inset-0 z-20 bg-white/30 backdrop-blur-sm flex justify-end">
+    <div className="fixed inset-0 z-[20] bg-white/30 backdrop-blur-sm flex justify-end">
       <div className="relative h-screen w-[33vw] bg-white shadow-lg flex flex-col items-center justify-center">
         <button
           className="absolute top-6 right-[3.2rem] text-black text-3xl cursor-pointer hover:opacity-70 transition"
