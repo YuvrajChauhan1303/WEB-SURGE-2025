@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="h-[70vh] bg-slate-900 flex py-16 px-20">
+    <div className="h-[70vh] bg-slate-900 flex py-16 px-20 z-3 relative">
       <div className="w-[75vw] h-full">
         <div className="text-white tracking-wide underline">
           <h1
@@ -85,7 +85,7 @@ const Footer = () => {
               Check Your 7th CPC Pension Revision Status
             </a>
             <a href="#" className="block hover:underline">
-              Pensioners' Portal
+              Pensioners&apos; Portal
             </a>
             <a href="#" className="block hover:underline">
               Site Map

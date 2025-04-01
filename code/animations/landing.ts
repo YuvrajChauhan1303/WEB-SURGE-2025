@@ -9,7 +9,7 @@ export const animateLandingPage = (
   // Ensure all cards have the "hidden" class before animation
   cardRefs.forEach((ref) => {
     if (ref.current) {
-      ref.current.classList.add("hidden");
+      ref.current.classList.add("opacity-0");
     }
   });
 

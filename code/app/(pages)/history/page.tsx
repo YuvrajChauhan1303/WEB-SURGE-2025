@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import { Timeline } from "@/components/timeline";
 
 function Page() {
@@ -35,8 +35,8 @@ function Page() {
       title: "2008 - Chandrayaan-1",
       content: (
         <p className="text-neutral-800 text-xl font-normal">
-          India's first lunar probe confirmed the presence of water molecules on
-          the Moon.
+          India&apos;s first lunar probe confirmed the presence of water
+          molecules on the Moon.
         </p>
       ),
     },
