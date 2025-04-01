@@ -4,7 +4,7 @@ import Link from "next/link";
 import { CgMenuLeft } from "react-icons/cg";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import FullNavbar2 from "./FullNavbar2";
+import FullNavbar from "./FullNavbar";
 
 const Navbar2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar2 = () => {
   }, [pathname]);
 
   return (
-    <nav className="flex items-center justify-between px-12 py-2 bg-black/10 text-white z-2 w-screen">
+    <nav className="fixed flex items-center justify-between px-12 py-2 bg-black/10 text-white z-4 w-screen">
       <Link href={"/"} className="cursor-pointer">
         <Image src={"/images/ISRO.png"} width={60} height={80} alt="logo" />
       </Link>
@@ -30,7 +30,7 @@ const Navbar2 = () => {
         />
       </div>
 
-      {isMenuOpen && <FullNavbar2 onClose={() => setIsMenuOpen(false)} />}
+      {isMenuOpen && <FullNavbar onClose={() => setIsMenuOpen(false)} />}
     </nav>
   );
 };
