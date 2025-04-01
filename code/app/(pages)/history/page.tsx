@@ -6,6 +6,7 @@ function Page() {
   const data = [
     {
       title: "1969 - Formation of ISRO",
+      imgSrc: "/images/1962.jpg", // Update with actual image path
       content: (
         <p className="text-neutral-800 text-xl font-normal">
           The Indian Space Research Organisation (ISRO) was established under
@@ -15,6 +16,7 @@ function Page() {
     },
     {
       title: "1975 - First Indian Satellite (Aryabhata)",
+      imgSrc: "/images/1975.jpg",
       content: (
         <p className="text-neutral-800 text-xl font-normal">
           ISRO launched its first satellite, Aryabhata, using a Soviet launch
@@ -24,6 +26,7 @@ function Page() {
     },
     {
       title: "1980 - First Indigenous Satellite Launch",
+      imgSrc: "/images/1980.jpg",
       content: (
         <p className="text-neutral-800 text-xl font-normal">
           Rohini satellite was successfully placed in orbit using the indigenous
@@ -33,6 +36,7 @@ function Page() {
     },
     {
       title: "2008 - Chandrayaan-1",
+      imgSrc: "/images/2008.jpg",
       content: (
         <p className="text-neutral-800 text-xl font-normal">
           India's first lunar probe confirmed the presence of water molecules on
@@ -42,6 +46,7 @@ function Page() {
     },
     {
       title: "2014 - Mars Orbiter Mission (Mangalyaan)",
+      imgSrc: "/images/2014.jpg",
       content: (
         <p className="text-neutral-800 text-xl font-normal">
           India became the first country to reach Mars on its first attempt, at
@@ -51,6 +56,7 @@ function Page() {
     },
     {
       title: "2019 - Chandrayaan-2",
+      imgSrc: "/images/2019.jpg",
       content: (
         <p className="text-neutral-800 text-xl font-normal">
           The mission aimed for a soft landing on the Moon but partially
@@ -60,6 +66,7 @@ function Page() {
     },
     {
       title: "2023 - Chandrayaan-3",
+      imgSrc: "/images/jpg",
       content: (
         <p className="text-neutral-800 text-xl font-normal">
           India successfully landed a rover on the lunar surface, making it the
