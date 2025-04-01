@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
-export const CurrentLeads = () => {
+const CurrentLeads = () => {
   const currentLeads = [
     {
       name: "Dr. S. Somanath",
@@ -64,9 +65,11 @@ export const CurrentLeads = () => {
             >
               {/* Image */}
               <div className="w-full h-64 overflow-hidden rounded-lg">
-                <img
+                <Image
                   src={leader.imgSrc}
                   alt={leader.name}
+                  width={600} // Adjust this width as necessary
+                  height={400} // Adjust this height as necessary
                   className="w-full h-full object-cover"
                 />
               </div>
