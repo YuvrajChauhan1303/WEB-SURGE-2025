@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="z-2 relative mt-[-60px]">
+      <div className="z-3 relative -top-16">
         <div className="flex w-screen justify-center gap-8">
           <LandingCard number="12,752" text="Distance in Km" ref={cardRef1} />
           <LandingCard number="18" text="Satellites Released" ref={cardRef2} />
