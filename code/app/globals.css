@@ -6,6 +6,16 @@
 }
 
 @font-face {
+  font-family: "organetto";
+  src: url("/fonts/organetto.otf");
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("/fonts/inter.ttf");
+}
+
+@font-face {
   font-family: "teko";
   src: url("/fonts/Teko-Light.ttf");
 }
