@@ -26,15 +26,20 @@ function ContactPage() {
 
       <div className="flex my-4">
         <div className="w-1/2 max-w-6xl bg-white p-10 rounded-xl mt-10 flex flex-col items-left justify-center">
-          <h2 className="text-4xl font-bold underline">Headquarters</h2>
+          <h2
+            className="text-4xl font-bold underline"
+            style={{ fontFamily: "fsp" }}
+          >
+            Headquarters
+          </h2>
           <div className="mt-4 text-lg flex flex-col items-left">
-            <p className="font-semibold">
+            <p className="font-semibold" style={{ fontFamily: "fsp" }}>
               Indian Space Research Organisation (ISRO)
             </p>
             <p>Antariksh Bhavan, New BEL Road</p>
             <p>Bangalore, Karnataka, India</p>
 
-            <p className="mt-8 text-gray-600 hover:underline">
+            <p className="mt-8 text-gray-600 hover:underline text-sm">
               Use map to get directions &#8594;
             </p>
           </div>
@@ -55,11 +60,13 @@ function ContactPage() {
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 px-6">
         {/* VSSC */}
         <div className="bg-white p-8 rounded-xl border border-gray-300 ">
-          <h3 className="text-2xl font-semibold">
+          <h3 className="text-2xl font-semibold" style={{ fontFamily: "fsp" }}>
             Vikram Sarabhai Space Centre (VSSC)
           </h3>
-          <p className="mt-1">Thiruvananthapuram, Kerala, India</p>
-          <p className="mt-2 text-gray-700">
+          <p className="mt-1" style={{ fontFamily: "fsp" }}>
+            Thiruvananthapuram, Kerala, India
+          </p>
+          <p className="mt-2 text-gray-700" style={{ fontFamily: "inter" }}>
             VSSC is ISRO&apos;s lead center for the development of satellite
             launch vehicles and sounding rockets. It focuses on aerospace
             engineering, propulsion systems, and payload integration.
@@ -68,11 +75,13 @@ function ContactPage() {
 
         {/* LPSC */}
         <div className="bg-white p-8 rounded-xl border border-gray-300 ">
-          <h3 className="text-2xl font-semibold">
+          <h3 className="text-2xl font-semibold" style={{ fontFamily: "fsp" }}>
             Liquid Propulsion Systems Centre (LPSC)
           </h3>
-          <p className="mt-1">Valiamala, Kerala, India</p>
-          <p className="mt-2 text-gray-700">
+          <p className="mt-1" style={{ fontFamily: "fsp" }}>
+            Valiamala, Kerala, India
+          </p>
+          <p className="mt-2 text-gray-700" style={{ fontFamily: "inter" }}>
             LPSC is responsible for the design, development, and testing of
             liquid propulsion systems used in launch vehicles and spacecraft. It
             plays a key role in the cryogenic engine technology.
@@ -81,11 +90,13 @@ function ContactPage() {
 
         {/* SDSC SHAR */}
         <div className="bg-white p-8 rounded-xl border border-gray-300 ">
-          <h3 className="text-2xl font-semibold">
+          <h3 className="text-2xl font-semibold" style={{ fontFamily: "fsp" }}>
             Satish Dhawan Space Centre (SDSC) SHAR
           </h3>
-          <p className="mt-1">Sriharikota, Andhra Pradesh, India</p>
-          <p className="mt-2 text-gray-700">
+          <p className="mt-1" style={{ fontFamily: "fsp" }}>
+            Sriharikota, Andhra Pradesh, India
+          </p>
+          <p className="mt-2 text-gray-700" style={{ fontFamily: "inter" }}>
             SDSC SHAR is ISRO&apos;s primary launch center, responsible for
             integrating and launching satellites into orbit. It houses launch
             pads and testing facilities for PSLV, GSLV, and future rockets.
@@ -94,11 +105,13 @@ function ContactPage() {
 
         {/* NRSC */}
         <div className="bg-white p-8 rounded-xl border border-gray-300 ">
-          <h3 className="text-2xl font-semibold">
+          <h3 className="text-2xl font-semibold" style={{ fontFamily: "fsp" }}>
             National Remote Sensing Centre (NRSC)
           </h3>
-          <p className="mt-1">Balanagar, Hyderabad, Telangana, India</p>
-          <p className="mt-2 text-gray-700">
+          <p className="mt-1" style={{ fontFamily: "fsp" }}>
+            Balanagar, Hyderabad, Telangana, India
+          </p>
+          <p className="mt-2 text-gray-700" style={{ fontFamily: "inter" }}>
             NRSC manages remote sensing applications, data processing, and
             satellite imagery analysis. It supports disaster management,
             agriculture, and environmental monitoring programs.
@@ -108,7 +121,12 @@ function ContactPage() {
 
       {/* Social Media Links */}
       <div className="w-full max-w-6xl bg-white p-8 rounded-xl mt-10">
-        <h2 className="text-3xl font-semibold text-center">Follow Us</h2>
+        <h2
+          className="text-3xl font-semibold text-center"
+          style={{ fontFamily: "fsp" }}
+        >
+          Follow Us
+        </h2>
         <div className="flex justify-center gap-8 mt-6">
           <Link href="https://www.facebook.com/ISRO" passHref legacyBehavior>
             <a>

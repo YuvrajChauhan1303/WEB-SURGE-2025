@@ -20,7 +20,10 @@ function Page() {
       {/* About ISRO Section */}
       <section className="py-16 px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-semibold border-l-4 border-blue-500 pl-4">
+          <h1
+            className="text-3xl font-semibold border-l-4 border-blue-500 pl-4"
+            style={{ fontFamily: "fsp" }}
+          >
             About ISRO
           </h1>
           <p className="text-lg mt-4 leading-relaxed">
@@ -36,13 +39,19 @@ function Page() {
       {/* Mission Section */}
       <section className="py-16 px-8 bg-gray-200">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-semibold border-l-4 border-red-500 pl-4">
+          <h1
+            className="text-3xl font-semibold border-l-4 border-red-500 pl-4"
+            style={{ fontFamily: "fsp" }}
+          >
             Our Mission
           </h1>
-          <p className="text-lg mt-4 leading-relaxed">
+          <p
+            className="text-lg mt-4 leading-relaxed"
+            style={{ fontFamily: "inter" }}
+          >
             ISRO is dedicated to harnessing space technology for the benefit of
             society. Its mission includes expanding scientific research,
-            ensuring technological advancements, and strengthening India’s
+            ensuring technological advancements, and strengthening India&apso;s
             capabilities in space exploration.
           </p>
         </div>
@@ -51,7 +60,10 @@ function Page() {
       {/* Achievements Section */}
       <section className="py-16 px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-semibold border-l-4 border-green-500 pl-4">
+          <h1
+            className="text-3xl font-semibold border-l-4 border-green-500 pl-4"
+            style={{ fontFamily: "fsp" }}
+          >
             Notable Achievements
           </h1>
           <div className="flex flex-wrap gap-6 justify-center mt-6">
@@ -88,10 +100,16 @@ function Page() {
       {/* Future Goals Section */}
       <section className="py-16 px-8 bg-gray-200">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-semibold border-l-4 border-purple-500 pl-4">
+          <h1
+            className="text-3xl font-semibold border-l-4 border-purple-500 pl-4"
+            style={{ fontFamily: "fsp" }}
+          >
             Future Goals
           </h1>
-          <p className="text-lg mt-4 leading-relaxed">
+          <p
+            className="text-lg mt-4 leading-relaxed"
+            style={{ fontFamily: "inter" }}
+          >
             ISRO is working on ambitious projects like{" "}
             <span className="font-semibold">Gaganyaan</span> (India&apos;s first
             crewed spaceflight), interplanetary missions, and advanced satellite

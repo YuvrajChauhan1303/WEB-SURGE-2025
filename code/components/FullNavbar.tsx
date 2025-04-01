@@ -12,8 +12,6 @@ const links = [
   { link: "/history", title: "History" },
   { link: "/career", title: "Career" },
   { link: "/people", title: "People" },
-  { link: "/missions", title: "Missions" },
-  { link: "/launch-vehicles", title: "Vehicles" },
 ];
 
 const FullNavbar: React.FC<FullNavbarProps> = ({ onClose }) => {

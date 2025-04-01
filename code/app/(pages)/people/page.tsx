@@ -75,10 +75,18 @@ const CurrentLeads = () => {
               </div>
 
               {/* Name & Position */}
-              <h3 className="text-2xl font-bold text-neutral-700 mt-4">
+              <h3
+                className="text-2xl font-bold text-neutral-700 mt-4"
+                style={{ fontFamily: "fsp" }}
+              >
                 {leader.name}
               </h3>
-              <h4 className="text-lg text-gray-500">{leader.position}</h4>
+              <h4
+                className="text-lg text-gray-500"
+                style={{ fontFamily: "fsp" }}
+              >
+                {leader.position}
+              </h4>
 
               {/* Description */}
               <div className="mt-2">{leader.description}</div>
